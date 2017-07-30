@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Angular QuickStart</title>
+    <title>Narrative Visualization</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/angular-polyfills/dist/all.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="polyfills.js"></script>
+    
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css">
+    
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Polyfill(s) for older browsers -->
-    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    
+    <script src="node_modules/d3/d3.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="https://unpkg.com/zone.js@0.8.4?main=browser"></script>
-    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
-
-    <script src="systemjs.config.server.js"></script>
+    <script src="systemjs.config.js"></script>
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>

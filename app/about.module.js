@@ -6,18 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Employment Prejections';
+var common_1 = require("@angular/common");
+var about_routing_module_1 = require("./about-routing.module");
+var about_component_1 = require("./about.component");
+var AboutModule = (function () {
+    function AboutModule() {
     }
-    return AppComponent;
+    return AboutModule;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+AboutModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, about_routing_module_1.AboutRoutingModule],
+        declarations: [about_component_1.AboutComponent],
+        exports: []
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], AboutModule);
+exports.AboutModule = AboutModule;
+//# sourceMappingURL=about.module.js.map

@@ -1,5 +1,94 @@
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+body {
+    width: 100%;
+    min-width: 1280px;
+    background-color: #152A3C;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.full-fixed-width {
+    width: 1280px;
+    margin: auto;
+}
+
+.clickable-text {
+    cursor: pointer;
+    color: #b5d1eb;
+}
+
+.clickable-text:hover {
+    color: #50f1f5;
+}
+
+H1 {
+    font-size: 32px;
+    line-height: 1.28;
+    color: #b5d1eb;
+}
+
+H2 {
+    font-size: 28px;
+    color: #73eaed;
+}
+
+H3 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.tooltip-inner {
+    background-color: #152A3C;
+    color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #152A3C;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #152A3C;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #152A3C;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #152A3C;
+}
+
+.main-container {
+  white-space: nowrap; /* keep panels side by side */
+  margin-top: 25px;
+  padding-left: 35px;
+}
+
+.overview-panel, .job-panel {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.overview-panel {
+  width: 779px;
+    height: 520px;
+    border-radius: 8px;
+    padding: 10px 16px 16px 16px;
+    background-color: #ffffff;
+}
+
+.job-panel {
+   width: 401px;
+    height: 520px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 10px 16px 16px 16px;
+    margin-left: 25px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #D8D8D8;
+  shape-rendering: crispEdges;
 }

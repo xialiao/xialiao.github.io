@@ -1,0 +1,87 @@
+.nav-container {
+  background-color: #35516a;
+}
+
+nav {
+  height: 62px;
+  display: table-row;
+}
+
+.nav-home, .nav-main-item, .nav-space, .nav-about {
+  display: table-cell;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-bottom: 2px solid #35516a;
+}
+
+.nav-home {
+  text-align: left;
+  padding-left: 80px;
+}
+
+.nav-home  a{
+  font-size: 20px;
+  color: #b5d1eb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-home:hover a {
+  color: #50f1f5;
+}
+
+.nav-home.selected a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-main-item {
+  padding: 0;
+}
+
+.nav-space {
+  padding-left: 20px; /* used to keep the active route's underline confined to the width of the text */
+}
+
+.nav-main-item.selected {
+  border-bottom-color: #3dbfc2;
+}
+
+.nav-main-item a {
+  font-size: 20px;
+  color: #b5d1eb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-main-item:hover a {
+  color: #50f1f5;
+}
+
+.nav-main-item.selected a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-about {
+  text-align: right;
+  width: 100%;
+  padding-right: 100px;
+}
+
+.nav-about a {
+  font-size: 20px;
+  color: #b5d1eb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-about:hover a {
+  color: #50f1f5;
+}
+
+.nav-about.selected a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
