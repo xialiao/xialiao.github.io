@@ -1,5 +1,5 @@
-/// <reference path="../typings/d3/index.d.ts" />
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import * as d3 from 'd3';
 
 @Component({
   selector: 'occupations',
@@ -90,20 +90,20 @@ export class OccupationsComponent implements OnInit {
       .data([{label: 'growing', value: "#1E67AC"}, {label: 'declining', value: "#E05869"}])
       .enter().append("g")
       .attr("class", "legend")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+      .attr("transform", function(d: any, i: any) { return "translate(0," + i * 20 + ")"; });
 
     legend.append("rect")
       .attr("x", width - 18)
       .attr("width", 18)
       .attr("height", 18)
-      .style("fill", function(d) {return d.value;});
+      .style("fill", function(d: any) {return d.value;});
 
     legend.append("text")
       .attr("x", width - 24)
       .attr("y", 9)
       .attr("dy", ".35em")
       .style("text-anchor", "end")
-      .text(function(d) { return d.label; });
+      .text(function(d: any) { return d.label; });
       
     //draw annotation circle
     /*var jsonCircles = [{ "x_axis": 550, "y_axis": 250, "radius": 130, "color" : "#7493AF" }];
@@ -281,7 +281,7 @@ export class OccupationsComponent implements OnInit {
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
        
         x.domain(bardata.map(function(d) { return d.year; }));
-        y.domain([0, d3.max(bardata, function(d) { return +d.jobnum; })]);
+        y.domain([0, d3.max(bardata, function(d: any) { return +d.jobnum; })]);
         
         g.append("g")
           .attr("class", "x axis")
@@ -296,16 +296,16 @@ export class OccupationsComponent implements OnInit {
           .data(bardata).enter();
         bars.append("rect")
           .attr("class", "bar")
-          .style("fill", function(d) { return d.color;}) 
-          .attr("x", function(d) { return x(d.year); })
-          .attr("y", function(d) { return y(+d.jobnum); })
-          .attr("height", function(d) { return height - y(+d.jobnum); })
+          .style("fill", function(d: any) { return d.color;}) 
+          .attr("x", function(d: any) { return x(d.year); })
+          .attr("y", function(d: any) { return y(+d.jobnum); })
+          .attr("height", function(d: any) { return height - y(+d.jobnum); })
           .attr("width", x.rangeBand());
         bars.append("text")
-          .attr("x", function(d) { return x(d.year) + 20; })
-          .attr("y", function(d) { return y(+d.jobnum) - 10; })
+          .attr("x", function(d: any) { return x(d.year) + 20; })
+          .attr("y", function(d: any) { return y(+d.jobnum) - 10; })
           .attr("dy", ".35em")
-          .text(function(d) { return d.jobnum + " K" });
+          .text(function(d: any) { return d.jobnum + " K" });
         
         var occp = data.Occupation;
         if (occp.length > 50)
