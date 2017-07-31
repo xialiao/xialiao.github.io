@@ -6,8 +6,13 @@
 .instruction {
     margin-top: 10px;
     margin-left: 300px;
-    color: #ffffff;
 	font-family: Lato;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 17px;
+	background-color: #F3D368;
+	width: 700px;
+	padding-top: 5px;
+	text-align: center;
+	height: 36px;
+	color: #4A4A4A;
 }
