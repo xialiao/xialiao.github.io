@@ -9,7 +9,7 @@ import {Subscription} from 'rxjs/Subscription';
 })
 
 export class AboutComponent implements OnInit, OnDestroy {
-    topics = ['structure', 'scene', 'annotation', 'parameter', 'trigger'];
+    topics = ['data', 'structure', 'scene', 'annotation', 'parameter', 'trigger'];
     menuSelection: string;
     
     routeSub: Subscription;

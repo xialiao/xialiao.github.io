@@ -1,5 +1,6 @@
 <div class="support-container full-fixed-width">
     <ul class="menu">
+        <li [class.selected]="menuSelection == 'data'" (click)="selectTopic('data')"><div class="title">Project Data</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
        <li [class.selected]="menuSelection == 'structure'" (click)="selectTopic('structure')"><div class="title">Hybrid Structure</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
        <li [class.selected]="menuSelection == 'scene'" (click)="selectTopic('scene')"><div class="title">Scene</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
        <li [class.selected]="menuSelection == 'annotation'" (click)="selectTopic('annotation')"><div class="title">Annotation</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
@@ -7,6 +8,23 @@
        <li [class.selected]="menuSelection == 'trigger'" (click)="selectTopic('trigger')"><div class="title">Trigger</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>    
     </ul><!-- no whitespace
  --><div class="contents text-container">
+       <div *ngIf="menuSelection == 'data'">
+            <div class="section">
+                <h1>Data source</h1>
+                <p>
+                    I used occupation tables at <a href="https://www.bls.gov/emp/">US Employment Projection</a>
+                    The original data tables are cleaned (such as removing null, filtered unrelevant rows) 
+                    and joined (for example, joining fast growing jobs table with occupation characteric table
+                    to produce education requirement for the fast growing jobs), in order to produce charts (scatter
+                    plots and bar charts) in this narrative visualization.
+                </p>
+                <h2>Implementation</h2>
+                <p>
+                    The application is built with Angular2 web framework. All interactive visualizations are implemented
+                    using D3. The source code of this project can be found at <a href="https://github.com/xialiao/xialiao.github.io/">Github</a>.
+                </p>
+            </div>
+        </div>
         <div *ngIf="menuSelection == 'structure'">
             <div class="section">
                 <h1>Interactive Slideshow</h1>

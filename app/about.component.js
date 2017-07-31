@@ -14,7 +14,7 @@ var AboutComponent = (function () {
     function AboutComponent(_route, _router) {
         this._route = _route;
         this._router = _router;
-        this.topics = ['structure', 'scene', 'annotation', 'parameter', 'trigger'];
+        this.topics = ['data', 'structure', 'scene', 'annotation', 'parameter', 'trigger'];
     }
     AboutComponent.prototype.ngOnInit = function () {
         var _this = this;
