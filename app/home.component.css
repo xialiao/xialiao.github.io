@@ -2,3 +2,12 @@
     padding-top: 20px;
     text-align: center;
 }
+
+.instruction {
+    margin-top: 10px;
+    margin-left: 300px;
+    color: #ffffff;
+	font-family: Lato;
+	font-size: 14px;
+	line-height: 17px;
+}
