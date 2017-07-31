@@ -1,6 +1,6 @@
 <div class="support-container full-fixed-width">
     <ul class="menu">
-        <li [class.selected]="menuSelection == 'data'" (click)="selectTopic('data')"><div class="title">Project Data</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
+        <li [class.selected]="menuSelection == 'data'" (click)="selectTopic('data')"><div class="title">Data &amp; Implementation</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
        <li [class.selected]="menuSelection == 'structure'" (click)="selectTopic('structure')"><div class="title">Hybrid Structure</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
        <li [class.selected]="menuSelection == 'scene'" (click)="selectTopic('scene')"><div class="title">Scene</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
        <li [class.selected]="menuSelection == 'annotation'" (click)="selectTopic('annotation')"><div class="title">Annotation</div><i class="fa fa-sort-asc fa-rotate-90"></i></li>
@@ -10,7 +10,7 @@
  --><div class="contents text-container">
        <div *ngIf="menuSelection == 'data'">
             <div class="section">
-                <h1>Data source</h1>
+                <h2>Data source</h2>
                 <p>
                     I used occupation tables at <a href="https://www.bls.gov/emp/">US Employment Projection</a>
                     The original data tables are cleaned (such as removing null, filtered unrelevant rows) 
