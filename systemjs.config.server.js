@@ -24,7 +24,7 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // other libraries
-      'd3': 'node_modules/d3/d3.min.js',
+      'd3': 'npm:d3@3.5/d3.min.js',
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
       'ngx-bootstrap': 'npm:ngx-bootstrap/bundles/ngx-bootstrap.umd.js'
